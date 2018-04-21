@@ -1,7 +1,7 @@
 import React from "react";
 
 const Main = (props) =>
-      <div className="container">
+      <div className="container text-center">
         {props.children}
       </div>
 
