@@ -29,6 +29,7 @@ class App extends Component {
     message: 'Click an image to begin'
   };
 
+  // credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
   shuffleArray = (array) => {
     let imgArray = Img;
     for (let i = imgArray.length - 1; i > 0; i--) {
