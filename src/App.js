@@ -5,6 +5,20 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Image from "./components/Image";
 import Img from "./components/Img.json"
+//image imports (since I'm not using a server)
+import apples from "./images/apples.jpg"
+import blackberry from "./images/blackberry.jpg"
+import blueberries from "./images/blueberries.jpg"
+import cherries from "./images/cherries.jpg"
+import grapes from "./images/grapes.jpg"
+import orange from "./images/orange.jpg"
+import peaches from "./images/peaches.jpg"
+import pears from "./images/pears.jpg"
+import plums from "./images/plums.jpg"
+import pomegranate from "./images/pomegranate.jpg"
+import raspberries from "./images/raspberries.jpg"
+import strawberries from "./images/strawberries.jpg"
+
 import './App.css';
 
 class App extends Component {
@@ -37,13 +51,43 @@ class App extends Component {
       })
       this.shuffleArray();
     }
-
     else {
       this.setState({
         message: "Incorrect: Play again?",
         correct: 0,
         picked: []
       })
+    }
+  }
+
+  imgSwitch = (name) => {
+    switch (name) {
+      case "apples":
+        return `${apples}`
+      case "blackberries":
+        return `${blackberry}`
+      case "blueberries":
+        return `${blueberries}`
+      case "cherries":
+        return `${cherries}`
+      case "grapes":
+        return `${grapes}`
+      case "oranges":
+        return `${orange}`
+      case "peaches":
+        return `${peaches}`
+      case "pears":
+        return `${pears}`
+      case "plums":
+        return `${plums}`
+      case "pomegranates":
+        return `${pomegranate}`
+      case "raspberries":
+        return `${raspberries}`
+      case "strawberries":
+        return `${strawberries}`
+      default:
+        return `${apples}`
     }
   }
 
@@ -54,7 +98,7 @@ class App extends Component {
         <Header />
         <Main>
           {this.shuffleArray(Img).map(image => (
-            <Image src={process.env.PUBLIC_URL + image.url} name={image.name} key={image.name} pickImg={this.pickImg}  />
+            <Image src={this.imgSwitch(image.name)} name={image.name} key={image.name} pickImg={this.pickImg}  />
           ))}
         </Main>
         <Footer />
