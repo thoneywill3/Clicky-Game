@@ -7,7 +7,7 @@ import Image from "./components/Image";
 import Img from "./components/Img.json"
 //image imports (since I'm not using a server)
 import apples from "./images/admiralackbar.jpg"
-import blackberry from "./images/anakinskywalker.jpg"
+import blackberry from "./images/hansolo.jpg"
 import blueberries from "./images/battledroid.jpg"
 import cherries from "./images/bb8.jpg"
 import grapes from "./images/bobafett.jpg"
