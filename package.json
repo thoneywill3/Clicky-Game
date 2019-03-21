@@ -2,17 +2,22 @@
   "name": "clicky-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://thoneywill3.github.io/Clicky-Game/",
+  "homepage": "https://thoneywill3.github.io/Clicky-Game/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
     "yarn": "^1.13.0"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "deploy": "gh-pages -b master -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
