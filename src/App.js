@@ -6,18 +6,18 @@ import Footer from "./components/Footer";
 import Image from "./components/Image";
 import Img from "./components/Img.json"
 //image imports (since I'm not using a server)
-import apples from "./images/apples.jpg"
-import blackberry from "./images/blackberry.jpg"
-import blueberries from "./images/blueberries.jpg"
-import cherries from "./images/cherries.jpg"
-import grapes from "./images/grapes.jpg"
-import orange from "./images/orange.jpg"
-import peaches from "./images/peaches.jpg"
-import pears from "./images/pears.jpg"
-import plums from "./images/plums.jpg"
-import pomegranate from "./images/pomegranate.jpg"
-import raspberries from "./images/raspberries.jpg"
-import strawberries from "./images/strawberries.jpg"
+import apples from "./images/admiralackbar.jpg"
+import blackberry from "./images/battledroid.jpg"
+import blueberries from "./images/bb8.jpg"
+import cherries from "./images/bobafett.jpg"
+import grapes from "./images/c3po.jpg"
+import orange from "./images/hansolo.jpg"
+import peaches from "./images/generalgrievous.jpg"
+import pears from "./images/r4.jpg"
+import plums from "./images/lukeskywalker.jpg"
+import pomegranate from "./images/macewindu.jpg"
+import raspberries from "./images/anakinskywalker.jpg"
+import strawberries from "./images/jangofett.jpg"
 
 import './App.css';
 
